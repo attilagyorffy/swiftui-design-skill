@@ -1,0 +1,27 @@
+{
+  "name": "swiftui-design-skill",
+  "version": "1.0.0",
+  "description": "SwiftUI frontend visual design skill — anti-AI-slop rules, design direction advisor, brand asset protocol, 5-dimension review. For Claude Code, Cursor, Codex, OpenCode, and all agent platforms.",
+  "keywords": [
+    "swiftui",
+    "design",
+    "frontend",
+    "ios",
+    "ui-ux",
+    "visual-design",
+    "agent-skill",
+    "claude-code",
+    "cursor",
+    "ai-slop",
+    "design-system"
+  ],
+  "author": "wholiver",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wholiver/swiftui-design-skill.git"
+  },
+  "skills": {
+    "entry": "SKILL.md"
+  }
+}
