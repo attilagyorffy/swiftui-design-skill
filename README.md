@@ -25,15 +25,6 @@
 npx skills add wholiver/swiftui-design-skill -g -y
 ```
 
-然后在你的 agent 里直接说话：
-
-「帮我设计一个阅读 App 的主界面，推荐 3 个风格方向让我选」
-「这个 UI 太 AI slop 了，帮我做个五维评审」
-「做一个健身 App 的 SwiftUI 原型，要有品牌感」
-「帮我定义一套设计系统 token」
-
-没有按钮、没有面板、没有 Figma 插件。打字，回车，拿结果。
-
 ## 能做什么
 
 | 能力 | 交付物 | 典型耗时 |
