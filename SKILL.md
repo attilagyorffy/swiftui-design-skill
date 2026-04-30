@@ -259,6 +259,7 @@ Before shipping, run the 5-Dimension Review (see `references/design-review.md`).
 | Typography & Color Systems   | `references/typography-color.md`    |
 | 5-Dimension Design Review    | `references/design-review.md`       |
 | Swift Extensions (required)  | `references/swift-extensions.md`    |
+| Brand Spec Template             | `templates/brand-spec.md`          |
 
 ---
 

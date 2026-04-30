@@ -1,3 +1,5 @@
+<div align="center">
+
 # SwiftUI Design Skill
 
 > *「一句话，一个能交付的 SwiftUI 界面。」*
@@ -6,6 +8,8 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Agent-Agnostic](https://img.shields.io/badge/Agent-Agnostic-blueviolet)](https://skills.sh)
 [![Skills](https://img.shields.io/badge/skills.sh-Compatible-green)](https://skills.sh)
+
+</div>
 
 **在你的 agent 里打一句话，拿回一个不 AI slop 的 SwiftUI 界面。**
 
@@ -101,15 +105,15 @@ npx skills add wholiver/swiftui-design-skill -g -y
 
 ```
 swiftui-design-skill/
-├── SKILL.md                           ← 核心定义（276 行）
+├── SKILL.md                           ← 核心定义（278 行）
 ├── references/
 │   ├── anti-ai-slop.md                ← 反 AI Slop 详细规则（268 行）
 │   ├── layout-patterns.md             ← 9 种布局模式 + 可复制代码（265 行）
-│   ├── typography-color.md            ← 字体层级 + 色彩系统（166 行）
+│   ├── typography-color.md            ← 字体层级 + 色彩系统（172 行）
 │   ├── design-review.md               ← 五维评审流程（151 行）
-│   └── swift-extensions.md            ← Color/Font/Animation 扩展（必备）
+│   └── swift-extensions.md            ← Color/Font/Animation 扩展（373 行，必备）
 └── templates/
-    └── brand-spec.md                  ← 品牌规范模板
+    └── brand-spec.md                  ← 品牌规范模板（77 行）
 ```
 
 ## 与 swiftui-expert-skill 的区别
