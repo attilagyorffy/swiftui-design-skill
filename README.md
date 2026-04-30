@@ -2,7 +2,6 @@
 
 # SwiftUI Design Skill
 
-> *「一句话，一个能交付的 SwiftUI 界面。」*
 > *"One prompt. A shippable SwiftUI interface."*
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -11,113 +10,113 @@
 
 </div>
 
-**在你的 agent 里打一句话，拿回一个不 AI slop 的 SwiftUI 界面。**
+**Type one line in your agent. Get back a SwiftUI interface that doesn't look AI-generated.**
 
-3 到 30 分钟，你能设计出一个**有签名感的 iOS 界面**——不是「AI 做的还行」那种水平，是看起来像有品味的设计师做的。
+In 3 to 30 minutes, you can design a **signature iOS interface** — not "AI-made-it-looks-okay" quality, but something that looks like it was crafted by a designer with taste.
 
-反 AI slop 六条铁律、设计方向顾问、品牌资产协议、五维评审——全部内置。给 skill 你的品牌色板，它会读懂你的气质；什么都不给，内置的 5 种设计语汇也能兜底到不出丑。
+Anti-AI Slop 6 Iron Rules, Design Direction Advisor, Brand Asset Protocol, 5-Dimension Review — all built in. Give the skill your brand palette and it will read your vibe; give nothing and the 5 built-in design languages will still hold their ground.
 
-跨 agent 通用——Claude Code、Cursor、Codex、OpenCode、Hermes 都能装。
+Works across agents — Claude Code, Cursor, Codex, OpenCode, Hermes, all supported.
 
-## 装上就能用
+## Install & Go
 
 ```bash
 npx skills add wholiver/swiftui-design-skill -g -y
 ```
 
-## 能做什么
+## What Can It Do
 
-| 能力 | 交付物 | 典型耗时 |
-|------|--------|----------|
-| SwiftUI 界面设计 | 可编译的 SwiftUI 代码 · 设计系统 token · 布局模式 | 10–15 min |
-| 设计方向顾问 | 5 流派 × N 种设计哲学 · 推荐 3 方向 · 视觉锚点描述 | 5 min |
-| 品牌资产集成 | brand-spec.md · 色板 · 字体 · 间距系统 | 5–10 min |
-| 反 AI Slop 审查 | 逐条检查 · 具体修复代码 · 替代方案 | 3–5 min |
-| 五维评审 | 雷达图评分 · Keep/Fix/Quick Wins · 可操作修复清单 | 3 min |
-| 布局模式库 | 9 种常见布局 · 可复制的 SwiftUI 代码 | 即时 |
-| 动画设计 | spring/parallax/pull-to-refresh · 可编译代码 | 5–10 min |
+| Capability | Deliverable | Typical Time |
+|------------|-------------|--------------|
+| SwiftUI Interface Design | Compilable SwiftUI code · Design system tokens · Layout patterns | 10–15 min |
+| Design Direction Advisor | 5 schools × N design philosophies · 3 recommended directions · Visual anchor descriptions | 5 min |
+| Brand Asset Integration | brand-spec.md · Color palette · Typography · Spacing system | 5–10 min |
+| Anti-AI Slop Review | Item-by-item check · Concrete fix code · Alternative approaches | 3–5 min |
+| 5-Dimension Review | Radar chart scoring · Keep/Fix/Quick Wins · Actionable fix checklist | 3 min |
+| Layout Pattern Library | 9 common layouts · Copy-paste SwiftUI code | Instant |
+| Animation Design | Spring/parallax/pull-to-refresh · Compilable code | 5–10 min |
 
-## 核心机制
+## Core Mechanisms
 
-### 反 AI Slop 六条铁律
+### Anti-AI Slop 6 Iron Rules
 
-这是 skill 里最硬的一段规则。所有设计都必须通过这 6 条检查：
+This is the hardest set of rules in the skill. All designs must pass these 6 checks:
 
-| # | 铁律 | ❌ 禁止 | ✅ 替代方案 |
-|---|------|---------|------------|
-| 1 | 起点从上下文开始 | 空白画布凭空捏造 | 先问设计系统/UI kit/品牌资产 |
-| 2 | 初级设计师模式 | 等完美方案 | 灰色占位符 > 烂 SVG |
-| 3 | 给变体不给终稿 | 一个「最终答案」 | 2–3 个差异化方向 |
-| 4 | 占位符 > 烂实现 | AI 生成的剪贴画 | 干净的灰色占位 + 文字标注 |
-| 5 | 系统优先，别填充 | 塞满每一个像素 | 每个元素必须证明自己存在的理由 |
-| 6 | 禁止 AI slop 模式 | 紫蓝渐变、emoji 图标、圆角卡片+左边框 | 单一暖色强调色、SF Symbols、衬线标题 |
+| # | Iron Rule | ❌ Forbidden | ✅ Alternative |
+|---|-----------|-------------|----------------|
+| 1 | Start from context | Inventing from a blank canvas | Ask about design system / UI kit / brand assets first |
+| 2 | Junior Designer Mode | Waiting for the perfect solution | Gray placeholder > bad SVG |
+| 3 | Give variants, not finals | One "final answer" | 2–3 differentiated directions |
+| 4 | Placeholder > bad implementation | AI-generated clip art | Clean gray placeholder + text label |
+| 5 | System-first, don't fill | Packing every pixel | Every element must justify its existence |
+| 6 | Ban AI slop patterns | Purple-blue gradients, emoji icons, rounded cards + left border | Single warm accent color, SF Symbols, serif headlines |
 
-详见 `references/anti-ai-slop.md`。
+See `references/anti-ai-slop.md` for details.
 
-### 设计方向顾问
+### Design Direction Advisor
 
-当需求模糊时，skill 会从 5 大设计流派中推荐 3 个差异化方向：
+When requirements are vague, the skill recommends 3 differentiated directions from 5 major design schools:
 
-| 流派 | 特征 | 代表风格 |
-|------|------|----------|
-| **信息型** | 数据优先、图表密集 | Bloomberg Terminal |
-| **编辑型** | 杂志排版、衬线字体、大量留白 | NYT、Medium |
-| **表现型** | 大胆配色、不对称布局、动效前置 | Stripe、Linear |
-| **功能型** | 密集工具感、等宽字体点缀 | Things、OmniFocus |
-| **温暖极简** | 柔和中性色、圆角、微妙质感 | Notion、Craft |
+| School | Characteristics | Signature Style |
+|--------|-----------------|-----------------|
+| **Informational** | Data-first, chart-dense | Bloomberg Terminal |
+| **Editorial** | Magazine layout, serif type, generous whitespace | NYT, Medium |
+| **Expressive** | Bold color, asymmetric layout, motion-forward | Stripe, Linear |
+| **Functional** | Dense tool feel, monospace accents | Things, OmniFocus |
+| **Warm Minimal** | Soft neutrals, rounded corners, subtle texture | Notion, Craft |
 
-### 品牌资产协议
+### Brand Asset Protocol
 
-涉及具体品牌时强制执行 5 步硬流程：
+A mandatory 5-step hard process when working with a specific brand:
 
-| 步骤 | 动作 | 目的 |
-|------|------|------|
-| 1 · 问 | 用户有 brand guidelines 吗？ | 尊重已有资源 |
-| 2 · 搜 | 搜索品牌官方页面 | 获取真实素材 |
-| 3 · 下 | 下载实际资产文件 | PNG/SVG logo、字体 |
-| 4 · 验 | 验证颜色匹配官方来源 | 核对 hex 值 |
-| 5 · 写 | 生成 brand-spec.md | 记录完整设计系统 |
+| Step | Action | Purpose |
+|------|--------|---------|
+| 1 · Ask | Does the user have brand guidelines? | Respect existing assets |
+| 2 · Search | Search the brand's official pages | Obtain real materials |
+| 3 · Download | Download actual asset files | PNG/SVG logos, fonts |
+| 4 · Verify | Verify colors match official sources | Cross-check hex values |
+| 5 · Write | Generate brand-spec.md | Record complete design system |
 
-质量门槛：5 个真实品牌色、10 个设计 token、2 个字体家族、8pt 间距网格。
+Quality threshold: 5 real brand colors, 10 design tokens, 2 font families, 8pt spacing grid.
 
-### 五维评审
+### 5-Dimension Review
 
-每个设计交付前必须通过 5 个维度的评审：
+Every design must pass a 5-dimension review before delivery:
 
-| 维度 | 评分标准 | 最低分 |
-|------|----------|--------|
-| 🎯 哲学一致性 | 设计是否贯彻了选定的设计哲学 | ≥ 7/10 |
-| 📐 视觉层级 | 信息优先级是否清晰 | ≥ 7/10 |
-| 🔧 细节执行 | 间距、字体、颜色是否精确 | ≥ 7/10 |
-| ⚡ 功能性 | 布局是否服务用户目标 | ≥ 7/10 |
-| ✨ 原创性 | 是否有 1 个签名细节 | ≥ 7/10 |
+| Dimension | Scoring Criteria | Minimum Score |
+|-----------|------------------|---------------|
+| 🎯 Philosophy Consistency | Does the design embody the chosen design philosophy? | ≥ 7/10 |
+| 📐 Visual Hierarchy | Is the information priority clear? | ≥ 7/10 |
+| 🔧 Detail Execution | Are spacing, typography, and colors precise? | ≥ 7/10 |
+| ⚡ Functionality | Does the layout serve user goals? | ≥ 7/10 |
+| ✨ Originality | Is there at least 1 signature detail? | ≥ 7/10 |
 
-## 文件结构
+## File Structure
 
 ```
 swiftui-design-skill/
-├── SKILL.md                           ← 核心定义（278 行）
+├── SKILL.md                           ← Core definition (278 lines)
 ├── references/
-│   ├── anti-ai-slop.md                ← 反 AI Slop 详细规则（268 行）
-│   ├── layout-patterns.md             ← 9 种布局模式 + 可复制代码（265 行）
-│   ├── typography-color.md            ← 字体层级 + 色彩系统（172 行）
-│   ├── design-review.md               ← 五维评审流程（151 行）
-│   └── swift-extensions.md            ← Color/Font/Animation 扩展（373 行，必备）
+│   ├── anti-ai-slop.md                ← Anti-AI Slop detailed rules (268 lines)
+│   ├── layout-patterns.md             ← 9 layout patterns + copy-paste code (265 lines)
+│   ├── typography-color.md            ← Typography hierarchy + color system (172 lines)
+│   ├── design-review.md               ← 5-Dimension Review process (151 lines)
+│   └── swift-extensions.md            ← Color/Font/Animation extensions (373 lines, essential)
 └── templates/
-    └── brand-spec.md                  ← 品牌规范模板（77 行）
+    └── brand-spec.md                  ← Brand spec template (77 lines)
 ```
 
-## 与 swiftui-expert-skill 的区别
+## Difference from swiftui-expert-skill
 
 | | SwiftUI Design Skill | swiftui-expert-skill |
 |---|---|---|
-| **焦点** | 视觉设计、美学、品牌感 | 代码质量、性能、正确性 |
-| **问题** | 「看起来怎么样？」 | 「代码写得对不对？」 |
-| **输出** | 设计方向、色板、布局、评审 | 代码审查、Instruments 分析、API 现代化 |
-| **互补** | 先用 design 确定方向 | 再用 expert 确保代码质量 |
+| **Focus** | Visual design, aesthetics, brand feel | Code quality, performance, correctness |
+| **Question** | "How does it look?" | "Is the code correct?" |
+| **Output** | Design direction, color palette, layout, review | Code review, Instruments analysis, API modernization |
+| **Complementary** | Use Design first to set direction | Then use Expert to ensure code quality |
 
-两个 skill 可以配合使用：Design 确定「做什么」，Expert 确保「怎么做对」。
+The two skills work together: Design decides **what to build**, Expert ensures **how to build it right**.
 
 ## License
 
-MIT — 随便用，但请保留原作者署名。
+MIT — use freely, but please keep the original author attribution.
