@@ -10,6 +10,11 @@
 
 </div>
 
+<p align="center">
+  <a href="README.md"><img src="https://img.shields.io/badge/English-blue?style=flat-square" alt="English"></a>
+  <a href="README-zh.md"><img src="https://img.shields.io/badge/中文-red?style=flat-square" alt="中文"></a>
+</p>
+
 **Type one line in your agent. Get back a SwiftUI interface that doesn't look AI-generated.**
 
 In 3 to 30 minutes, you can design a **signature iOS interface** — not "AI-made-it-looks-okay" quality, but something that looks like it was crafted by a designer with taste.

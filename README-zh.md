@@ -11,6 +11,11 @@
 
 </div>
 
+<p align="center">
+  <a href="README.md"><img src="https://img.shields.io/badge/English-blue?style=flat-square" alt="English"></a>
+  <a href="README-zh.md"><img src="https://img.shields.io/badge/中文-red?style=flat-square" alt="中文"></a>
+</p>
+
 **在你的 agent 里打一句话，拿回一个不 AI slop 的 SwiftUI 界面。**
 
 3 到 30 分钟，你能设计出一个**有签名感的 iOS 界面**——不是「AI 做的还行」那种水平，是看起来像有品味的设计师做的。
