@@ -25,7 +25,7 @@ metadata:
 
 - Pure backend / API work with no UI
 - Fixing SwiftUI compilation errors (use swiftui-expert-skill instead)
-- Performance optimization of existing views (use swiftui-expert-skill)
+- Performance optimization of existing views (use swiftui-macos-performance)
 - Accessibility compliance only (use swiftui-expert-skill's accessibility topic)
 
 ## Prerequisites
